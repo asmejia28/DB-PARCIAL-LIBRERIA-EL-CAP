@@ -31,7 +31,7 @@ FROM cliente c
 JOIN venta v ON c.id_cliente = v.id_cliente
 JOIN detalle_venta dv ON v.id_venta = dv.id_venta
 JOIN producto pr ON dv.id_producto = pr.id_producto
-WHERE categoria = 'novela';
+WHERE pr.categoria = 'novela';
 
 -- 1.3 ¿Qué productos se vendieron en cada venta, indicando el número
 -- de venta, el nombre del producto, la cantidad comprada y el
@@ -60,7 +60,7 @@ FROM cliente c
 JOIN venta v ON c.id_cliente = v.id_cliente
 JOIN detalle_venta dv ON v.id_venta = dv.id_venta
 JOIN producto pr ON dv.id_producto = pr.id_producto
-WHERE categoria = 'tecnico';
+WHERE pr.categoria = 'tecnico';
 
 -- 1.5 ¿Qué clientes realizaron compras después del 10 de septiembre
 -- de 2026, indicando el nombre del cliente, la fecha de la compra,
@@ -76,7 +76,7 @@ FROM cliente c
 JOIN venta v ON c.id_cliente = v.id_cliente
 JOIN detalle_venta dv ON v.id_venta = dv.id_venta
 JOIN producto pr ON dv.id_producto = pr.id_producto
-WHERE fecha > '2026-09-10';
+WHERE v.fecha > '2026-09-10';
 
 -- =====================================================================
 -- 2. SUBCONSULTA CORRELACIONADA (3 consultas)

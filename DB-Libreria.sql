@@ -19,7 +19,7 @@ CREATE TABLE cliente (
 CREATE TABLE venta (
     id_venta INT PRIMARY KEY AUTO_INCREMENT,
     fecha DATE NOT NULL,
-    id_	
+    id_cliente INT NOT NULL,	
     FOREIGN KEY (id_cliente) REFERENCES cliente(id_cliente)
 );
 

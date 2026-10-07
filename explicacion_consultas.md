@@ -50,7 +50,7 @@ La primera consulta obtiene los productos cuyo precio es inferior a $40.000, mie
 
 La primera consulta obtiene los productos cuyo precio es menor a $35.000 y la segunda obtiene aquellos cuyo precio es superior a $50.000. Se utiliza `UNION` para combinar ambos grupos en un solo resultado. Esto permite identificar los productos que se encuentran en los extremos del rango de precios, es decir, los productos de menor y mayor valor.
 
-## Resultados esperados (para validar)
+## Resultados esperados 
 
 * **1.1:** Debe mostrar los productos incluidos en cada venta junto con el cliente, la fecha y el precio unitario.
 * **1.2:** Debe mostrar únicamente los clientes que compraron productos de categoría `novela`, junto con el producto, fecha y cantidad.

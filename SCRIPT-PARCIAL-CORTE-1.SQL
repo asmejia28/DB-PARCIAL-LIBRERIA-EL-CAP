@@ -92,7 +92,7 @@ SELECT c.nombre,
 	(SELECT MAX(v.fecha) FROM venta v WHERE v.id_cliente = c.id_cliente) AS ultima_compra
 FROM cliente c;
 
--- 2.2 ¿Cuántas veces aparece cada producto en una venta?
+-- 2.2 ¿En cuántas ventas diferentes aparece cada producto?
 -- La consulta principal recorre todos los productos.
 -- La subconsulta cuenta los registros de detalle_venta que corresponden
 -- al producto actual mediante dv.id_producto = pr.id_producto.
